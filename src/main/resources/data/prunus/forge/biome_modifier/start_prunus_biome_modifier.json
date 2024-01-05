@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "prunus:biome",
+  "features": "prunus:start_prunus",
+  "step": "surface_structures"
+}

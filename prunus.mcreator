@@ -1,0 +1,214 @@
+{
+  "mod_elements": [
+    {
+      "name": "Biome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biome",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prunus/world/biome/BiomeBiome.java"
+        ]
+      }
+    },
+    {
+      "name": "Prunus",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prunus",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/prunus/dimension/prunus.json",
+          "src/main/java/net/mcreator/prunus/world/dimension/PrunusDimension.java",
+          "src/main/resources/data/prunus/dimension_type/prunus.json"
+        ]
+      }
+    },
+    {
+      "name": "ChatPrunus",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chat_prunus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prunus/procedures/ChatPrunusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Toprunus",
+      "type": "function",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toprunus",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/prunus/functions/toprunus.mcfunction"
+        ]
+      }
+    },
+    {
+      "name": "OnPlayerLoadWorld",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_player_load_world",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prunus/procedures/OnPlayerLoadWorldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StartPrunus",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "start_prunus",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/prunus/forge/biome_modifier/start_prunus_biome_modifier.json",
+          "src/main/java/net/mcreator/prunus/world/features/StartPrunusFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "PlayerRevival",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_revival",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prunus/procedures/PlayerRevivalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "X",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Y",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Z",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ONLoadWorld",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "world",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "inprunus",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "biome.prunus.biome": "prunus"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "prunus",
+    "modName": "prunus",
+    "version": "1.0.0",
+    "author": "ryzhenko.na, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "modElementsPackage": "net.mcreator.prunus",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}

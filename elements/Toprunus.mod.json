@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "execute at @p in prunus:prunus run tp @s 0 100 0\n",
+    "name": "toprunus",
+    "namespace": "mod"
+  }
+}
